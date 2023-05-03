@@ -1,0 +1,66 @@
+
+a:link,
+a:visited,
+a:active {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+/* header formato simple */
+
+header {
+    padding: 20px 0;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    text-align: right
+}
+
+.logo-img {
+    width: 80px;
+    height: 30px;
+}
+
+
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78000;
+    text-decoration: underline;
+}
+
+
+/*inicia el cuerpo del login */
