@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+
+
 html {
     height: 100%;
+    
 }
+
+header {
+    padding: 20px 0;
+    background: white;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.logo {
+    display: flex;
+    text-align: right;
+}
+
+.logo-img {
+    width: 80px;
+    height: 30px;
+}
+
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78000;
+    text-decoration: underline;
+}
+
 
 body {
     margin: 0;
@@ -68,24 +124,26 @@ body {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #03e9f4;
+    color: #c78000;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px
+    
+    letter-spacing: 4px;
+    
 }
 
 .login-box a:hover {
-    background: #03e9f4;
+    background: #c78000;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-        0 0 25px #03e9f4,
-        0 0 50px #03e9f4,
-        0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #c78000,
+        0 0 25px #c78000,
+        0 0 50px #c78000,
+        0 0 100px #c78000;
 }
 
 .login-box a span {
@@ -160,7 +218,7 @@ body {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
+    background: linear-gradient(360deg, transparent, #c78000);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
 }
