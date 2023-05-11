@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Cotizador Comercial - LegaLario</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">
+        <div class="caja">
             <a>
-              <img class="logo-img" src="/assets/images/legalario-logo.png" alt="img" width="100" height="60">
+                <img class="logo-img" src="/assets/images/legalario-logo.png" alt="img" width="100" height="60">
             </a>
             <nav>
                 <a>Home</a>
@@ -20,39 +23,124 @@
         </div>
     </header>
 
-    <body>
-        <h1>Ingresas las caracteristicas</h1>
+    <section>
+        <div class="box-titulo">
+            <h1>Ingresas las caracteristicas</h1>
+        </div>
+    </section>
 
-        <section>
-            <h2>Diseña el flujo de tu cliente</h2>
-            <form action="">
-            <label for="">No. de Firmas</label><input type="number">
-            <label for="">Validacion de ID </label><input type="number">
-            <label for="">Extraccion de Datos OCR</label><input type="number">
-            <label for="">Lista Nominal</label><input type="number">
-            <label for="">Renapo</label><input type="number">
-            <label for="">Selfie</label><input type="number">
-            <label for="">Prueba de Vida</label><input type="number">
-            <label for="">Metodo de Entrega</label><input type="number">
-            <h2>Setup</h2>
-            <label for="">Numero de Usuarios</label><input type="number">
-            <label for="">Licencias APP Apoderado</label><input type="number">
-            <label for="">Carga Masiva</label><input type="text">
-            <label for="">Configuracion de Contratos</label><input type="text">
-            <label for="">Imagen Personalizada</label><input type="text">
-            <h2>Otros Add Ons</h2>
-            <label for="">Blockchain</label><input type="text">
-            <label for="">CLM</label><input type="text">
+
+    <main class="container-flex">
+        <div>
+            <form class="box-lista1">
+                <h2>Setup</h2>
+                <ul>
+                    <li>
+                        <label for="">Numero de Usuarios:</label>
+                        <input type="number" placeholder="Numero de usuarios">
+                    </li>
+                    <li>
+                        <label for="">Licencias APP Apoderado:</label>
+                        <input type="number" placeholder="Numero de Apoderados">
+                    </li>
+                    <li>
+                        <label for="">Carga Masiva</label>
+                        <select name="select">
+                            <option value="value1">Si</option>
+                            <option value="value2">No</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">Configuracion de Contratos</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="">Imagen Personalizada</label>
+                        <select name="select">
+                            <option value="value1">Si</option>
+                            <option value="value2">No</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h2>Otros Add Ons</h2>
+                    </li>
+                    <li>
+                        <label for="">Blockchain</label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for="">CLM</label>
+                        <input type="text">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="box-lista2">
+            <form>
+                <h2>Diseña de Flujo</h2>
+                <ul>
+                    <li>
+                        <label for="firmas">No. de Firmas</label>
+                        <input placeholder="Ingresa el # de firma" type="number">
+                    </li>
+                    <li>
+                        <label for="validacion">Validacion de ID </label>
+                        <select name="select">
+                            <option value="value1">Si</option>
+                            <option value="value2">No</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ocr">Extraccion de Datos OCR</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="lnominal">Lista Nominal</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="renapo">Renapo</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="selfie">Selfie</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="vida">Prueba de Vida</label>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <label for="">Metodo de Entrega</label>
+                        <input type="radio" id="mail" name="age" value="30">
+                        <label for="mail">Mail</label><br>
+                        <input type="radio" id="whats" name="age" value="60">
+                        <label for="whats">WhatssApp</label><br>
+                        <input type="radio" id="ambos" name="age" value="100">
+                        <label for="ambos">Ambos</label><br><br>
+                    </li>
+                </ul>
+
+                <button type="submit">Realizar Cotización
+                </button>
+        </div>
         </form>
-
-        </section>
-        
+        </div>
 
 
 
+    </main>
 
-    </body>
+    <footer>
+        <img src="/assets/images/iconLegalario_1.png">
+        <p class="copyright">&copy Copyright KaniCode - 2023</p>
+    </footer>
+
+
+
+
 
 
 </body>
+
 </html>

@@ -3,17 +3,17 @@
 
 html {
     height: 100%;
-    
+
 }
 
 header {
     padding: 20px 0;
     background: white;
     font-family: 'Konkhmer Sleokchher', cursive;
-    
+
 }
 
-.caja{
+.caja {
     width: 940px;
     position: relative;
     margin: 0px auto;
@@ -56,6 +56,8 @@ nav a:hover {
     color: #c78000;
     text-decoration: underline;
 }
+
+/* login */
 
 
 body {
@@ -131,9 +133,9 @@ body {
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    
+
     letter-spacing: 4px;
-    
+
 }
 
 .login-box a:hover {
