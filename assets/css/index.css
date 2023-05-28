@@ -7,6 +7,7 @@
 }
 
 
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -45,78 +46,71 @@
 
 /* Main */
 
-body {
+.flex-container {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    height: 805px;
+
 }
 
-.image-container {
-    flex: 1;
-    max-width: 100%;
+/*solo afecta a lado izquierdo*/
+
+.item1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
+    padding: 30px;
 }
 
-.image-container img {
+.item1 img {
     max-width: 100%;
 }
 
-.form-container {
-    align-items: center;
+/*solo afecta al lado derecho*/
+
+.item2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0px;
-    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
 }
 
-
-.form-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 400px;
-}
-
-.form-container i {
+.item2 i {
     color: #f49f17;
     height: 40px;
     width: 40px;
 }
 
-.form-container input {
+.item2 form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item2 input {
+    padding: 10px;
     outline: none;
     border: none;
     border-bottom: solid 2px #06244c;
     padding: 0 15px;
     font-size: 18px;
     margin: 20px 0;
-
+    height: 100%;
 }
 
-.form-container ::placeholder {
+.item2 input::placeholder {
     color: #f49f17;
     text-align: center;
+    font-weight: 10px;
 }
 
-.form-container button {
+.item2 button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -126,22 +120,38 @@ main {
     cursor: pointer;
 }
 
+.item2 p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.item2 a {
+    text-decoration: none;
+    color: #06244c;
+
+}
+
 @media (max-width: 767px) {
-    .container {
+    .flex-container {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        max-height: 100%;
     }
 
-    .form-container {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .item2 form {
+        margin: 0% auto;
     }
 
-    .image-container {
+    .item1 img {
         margin-bottom: 20px;
         display: none;
     }
 }
+
 
 
 /* Footer */
@@ -150,35 +160,61 @@ footer {
     color: #fff;
 }
 
-.container-ft {
+.center-text a {
+    text-decoration: none;
+    color: #f49f17;
+
+}
+
+.flex-containerft {
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0% auto;
-    padding: 10px;
 }
+
+.flex-containerft a {
+    text-decoration: none;
+    color: #f49f17;
+}
+
 
 .left-text {
-
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0% auto;
 }
 
+.center-text {
+    display: flex;
+    flex-direction: row;
+    margin: 0% auto;
+}
 
 .right-text {
-    text-align: right;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
-.center-image {
-    text-align: center;
+
+.right-text .material-symbols-outlined {
+    height: 100%;
+    font-weight: 20px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
-.center-image img {
-    max-width: 15%;
-}
+
 
 @media (max-width: 767px) {
-    .container-ft {
+    .flex-containerft {
         flex-direction: column;
         text-align: center;
     }
