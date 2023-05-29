@@ -1,13 +1,23 @@
-window.addEventListener('load', init, false);
-function init() {
-    let div = document.querySelector('#ocultar-y-mostrar');
-    div.style.visibility = 'visible';
-    let boton = document.querySelector('#ocultar-mostrar');
-    boton.addEventListener('click', function (e) {
-        if (div.style.visibility === 'visible') {
-            div.style.visibility = 'hidden';
-        } else {
-            div.style.visibility = 'visible';
-        }
-    }, false);
-}
+
+const username = document.getElementById('username')
+const password = document.getElementById('password')
+const button = document.getElementById('button')
+
+button.addEventListener('click', (e) => {
+    e.preventDefault()
+    const data = {
+        username: username.value,
+        password: password.value
+    }
+
+    if data = 
+
+
+function siguiente() {
+        window.open("/html/cotizador.html", "_self");        
+    }
+
+
+
+    console.log(data)
+})
