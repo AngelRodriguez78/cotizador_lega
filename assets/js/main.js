@@ -10,9 +10,6 @@ button.addEventListener('click', (e) => {
         password: password.value
     }
 
-    if data = 
-
-
 function siguiente() {
         window.open("/html/cotizador.html", "_self");        
     }
