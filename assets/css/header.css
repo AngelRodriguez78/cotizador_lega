@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header {
+    padding: 0;
+    background: white;
+    color: black;
+ 
+
+}
+
+.caja {
+    display: flex;
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.logo {
+    display: flex;
+    text-align: right;
+}
+
+.logo-img {
+    width: 80px;
+    height: 30px;
+}
+
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78000;
+    text-decoration: underline;
+
+}
