@@ -1,7 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-cotizador {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.contenedor-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+
+}
+
+.box-titulo {
+    border-style: dotted solid;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+}
+
+.box-titulo h1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+.box-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.box-lista .sub-texto {
+    
+    padding-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.etiqueta {
+    padding: 5px;
+}
+
+
+.text-incluido {
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+
+button {
+    padding: 5px;
+    font: bold 0.6em sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+}
+
+button:after {
+    content: " >>>";
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #000;
+    color: #fff;
 }
