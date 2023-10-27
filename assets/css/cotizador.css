@@ -10,42 +10,49 @@
 
 /* Estilos del cotizador */
 
-.box-titulo {
- 
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    justify-content: center;
-}
+.container {
 
-.box-titulo h1 {
-    text-align: center;
-}
 
+    width: 100%;
+    height: 100%;
+    background-color: #34495E;
+    color: aliceblue;
+}
 
 .container-cotizador {
     display: flex;
     flex-direction: row;
-    height: auto;
-    
 }
 
-.contenedor-box {
+
+.box-titulo {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    padding: 5px;
+    justify-content: center;
 }
+
+.box-titulo #titulo {
+    text-align: center;
+}
+
+#texto {
+    text-align: center;
+}
+
+/*Caja Lista 1*/
 
 .box-lista {
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0px 0px 0px 0px;
     align-items: center;
+    width: 33%;
+    padding-bottom: 2.5%;
 }
 
-.box-lista .sub-texto {
-    padding-bottom: 0;
+.sub-texto {
+    padding: 20px;
     text-align: center;
 }
 
@@ -57,52 +64,47 @@ ul {
     padding: 10px;
 }
 
-input,
-select {
-    padding: 5px;
-    width: 25rem;
-}
+/*estilo boton select*/
 
-input::placeholder {
-    text-align: center;
-    color: red;
-}
-
-select{
-    text-align: center;
-    color: red;
-}
-
-.text-incluido {
-    padding: 5rem;
+.radio-inputs {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    width: 50%;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
 }
 
-
-.boton{
-    padding: 25px;
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
 }
 
-button {
+.radio-inputs .radio input {
+    display: none;
+}
 
-    padding: 15px;
-    font: bold 0.6em sans-serif;
-    border: 2px solid #333;
-    border-radius: 5px;
-    background: none;
+.radio-inputs .radio .name {
+    display: flex;
     cursor: pointer;
-    transform: rotate(-1.5deg);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
 }
 
-button:after {
-    content: " >>>";
+.radio-inputs .radio input:checked+.name {
+    background-color: #fff;
+    font-weight: 600;
 }
 
-button:hover,
-button:focus {
-    outline: none;
-    background: #000;
-    color: #fff;
-}
+
+
+/* probando estilo para inpiut*/

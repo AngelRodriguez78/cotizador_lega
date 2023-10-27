@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box-lista2 {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    padding-bottom: 2.5%;
+}
+
+.input-group {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color:aliceblue;
+    border-bottom: 2px solid #AEAEAE;
+    height: 40px;
+    padding-right: 0.25rem;
+    text-align: center;
+    font-size: 1em;
+    width: 100px;
+}
+
+.input-group:focus {
+    background-color: transparent;
+    border: none;
+
+}
+
+.input-group::before {
+    border: none;
+}
+
+.input-group[type=number]::-webkit-inner-spin-button,
+.input-group[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+}
+
+.etiqueta2 {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+}
