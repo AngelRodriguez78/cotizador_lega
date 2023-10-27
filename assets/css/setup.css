@@ -11,9 +11,20 @@
 .box-lista3 {
     border: 1px solid green;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 33%;
+  
     padding-bottom: 2.5%;
 
+}
+
+.boton{
+    padding-top: 20px;
+    
+}
+
+.boton button{
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 0.5rem;
 }
