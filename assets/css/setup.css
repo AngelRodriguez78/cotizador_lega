@@ -9,11 +9,11 @@
 }
 
 .box-lista3 {
-    border: 1px solid green;
+    border: 1px solid green; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-  
+    width: 33%;
     padding-bottom: 2.5%;
 
 }
@@ -27,4 +27,5 @@
     width: 300px;
     height: 2.5rem;
     border-radius: 0.5rem;
+    background-color:bisque;
 }
