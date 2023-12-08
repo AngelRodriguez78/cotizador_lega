@@ -8,22 +8,35 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Estilos del cotizador */
 
-.container {
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+  
+}
 
-
-    width: 100%;
-    height: 100%;
+main {
+    min-height: 80vh;
+    min-width: 100vw;
     background-color: #34495E;
     color: aliceblue;
 }
 
+footer {
+    min-height: 30vh;
+    min-width: 100vw;
+}
+
+
+/* Estilos del cotizador */
+
 .container-cotizador {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2.5%;
 }
-
 
 .box-titulo {
     display: flex;
@@ -31,6 +44,7 @@
     padding: 5px;
     justify-content: center;
 }
+
 
 .box-titulo #titulo {
     text-align: center;
@@ -43,12 +57,14 @@
 /*Caja Lista 1*/
 
 .box-lista1 {
-    border: 1px solid green; 
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 33%;
     padding-bottom: 2.5%;
+    border-radius: 15%;
+    min-height: auto;
+    min-width: auto;
 }
 
 .sub-texto {
@@ -105,5 +121,74 @@ ul {
     font-weight: 600;
 }
 
+/*box lista 2*/
 
+.box-lista2 {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-bottom: 2.5%;
+    
+}
 
+.input-group {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: aliceblue;
+    border-bottom: 2px solid #AEAEAE;
+    height: 40px;
+    padding-right: 0.25rem;
+    text-align: center;
+    font-size: 1em;
+    width: 100px;
+}
+
+.input-group:focus {
+    background-color: transparent;
+    border: none;
+
+}
+
+.input-group::before {
+    border: none;
+}
+
+.input-group[type=number]::-webkit-inner-spin-button,
+.input-group[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+}
+
+.etiqueta2 {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+}
+
+/*box lista 3*/
+
+.box-lista3 {
+    border: 1px solid rgb(117, 128, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding-bottom: 2.5%;
+    border-radius: 15%;
+
+}
+
+.boton {
+    padding-top: 20px;
+
+}
+
+.boton button {
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: bisque;
+}

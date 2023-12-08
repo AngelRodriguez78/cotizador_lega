@@ -1,21 +1,20 @@
-document.getElementById("login-button").addEventListener("click", function () {
-    // Obtener los valores del usuario y la contraseña
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+const loginForm = document.getElementById('loginForm');
 
-    // Aquí deberías verificar las credenciales en el servidor, por ejemplo, en Node.js o PHP.
-    // Simularemos una comprobación simple en el cliente.
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-    console.log("Username: " + username);
-    console.log("Password: " + password);
-    
+    const username = event.target.username.value;
+    const password = event.target.password.value;
 
-
-    if (username === "daniel@legalario.com" && password === "123456789") {
-        // Las credenciales son correctas, redirige al usuario a la página de destino.
-        window.open ('/html/selector.html');
-        alert("Credenciales Correctas.");
-    } else {
-        alert("Credenciales incorrectas. Inténtalo de nuevo.");
+    // Validate username and password
+    if (username !== 'admin' || password !== 'password123') {
+        alert('Invalid username or password');
+        return;
     }
+
+    // Login successful
+    alert('Login successful');
+
+    // Redirect to homepage or dashboard
+    window.location.href = '/html/selector.html';
 });

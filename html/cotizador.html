@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
     <link rel="stylesheet" href="/assets/css/cotizador.css">
     <link rel="stylesheet" href="/assets/css/addons.css">
     <link rel="stylesheet" href="/assets/css/header.css">
@@ -21,192 +21,200 @@
         <div class="logo">
             <img src="/assets/images/legalario-logo.png" alt="Logotipo">
         </div>
+        <div class="box-titulo">
+            <h1 id="titulo">Lega Cloud</h1>
+            <p id="texto">Ingresa las caracteristicas de tu setup</p>
+        </div>
     </header>
 
     <!-- Inicia el llenado del cotizador -->
 
-    <main class="container">
-        <div class="box-titulo">
-            <h1 id="titulo">Cotizador SaaS</h1>
-            <p id="texto">Ingresa las caracteristicas de tu setup</p>
-        </div>
+    <main>
         <div class="container-cotizador">
-            <form class="box-lista1">
-                <h2 class="sub-texto">Ingresa las caracteristicas</h2>
-                <div>
+            <form>
+                <div class="box-lista1">
+                    <h2 class="sub-texto">Ingresa las caracteristicas</h2>
+                    <div>
 
-                    <label for="name" class="etiqueta">Numero de Documentos</label>
-                    <input class="input-group" min="72" max="1000000000" value="0">
+                        <label for="name" class="etiqueta">Numero de Documentos</label>
+                        <input class="input-group" min="72" max="1000000000" value="0">
 
-                </div>
-                <label class="etiqueta">Forma de Pago</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio" checked="">
-                        <span class="name">Mensual</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio">
-                        <span class="name">Semestral</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio">
-                        <span class="name">Anual</span>
-                    </label>
-                </div>
+                    </div>
+                    <label class="etiqueta">Forma de Pago</label>
+                    <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio" checked="">
+                            <span class="name">Mensual</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Semestral</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio">
+                            <span class="name">Anual</span>
+                        </label>
+                    </div>
 
-                <label class="etiqueta">Setup Basico</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio8" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio8">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">SDK / API</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio9" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio9">
-                        <span class="name">No</span>
-                    </label>
+                    <label class="etiqueta">Setup Basico</label>
+                    <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio8" checked="">
+                            <span class="name">Si</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio8">
+                            <span class="name">No</span>
+                        </label>
+                    </div>
+                    <label class="etiqueta">SDK / API</label>
+                    <div class="radio-inputs">
+                        <label class="radio">
+                            <input type="radio" name="radio9" checked="">
+                            <span class="name">Si</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio9">
+                            <span class="name">No</span>
+                        </label>
+                    </div>
                 </div>
             </form>
-            <form class="box-lista2">
-                <div>
-                    <h2 class="sub-texto">Add-Ons Setup</h2>
+
+            <form>
+                <div class="box-lista2">
+                    <div>
+                        <h2 class="sub-texto">Add-Ons Setup</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <label class="etiqueta2">Sub Cuenta Adicional(Anual)</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">Usuario Adicional</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">Usuario Firma Masiva</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">Firma Presencial - Tablet </label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">VPN</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">Bolsa de Soporte</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                        <li>
+                            <label class="etiqueta2">Hora Adicional de Soporte</label>
+                            <input class="input-group" type="number" min="0" value="0">
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <label class="etiqueta2">Sub Cuenta Adicional(Anual)</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">Usuario Adicional</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">Usuario Firma Masiva</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">Firma Presencial - Tablet </label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">VPN</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">Bolsa de Soporte</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                    <li>
-                        <label class="etiqueta2">Hora Adicional de Soporte</label>
-                        <input class="input-group" type="number" min="0" value="0">
-                    </li>
-                </ul>
             </form>
-            <section class="box-lista3">
-                <div>
-                    <h2 class="sub-texto">Add-Ons Flujo</h2>
-                </div>
-                <div>
-                <label class="etiqueta">Modelo IA</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio1" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio1">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">Prueba de Vida</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio2" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio2">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">Extracción OCR</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio3" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio3">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">RENAPO</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio4" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio4">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-            </div>
-                <div>
-        
-                <label class="etiqueta">INE</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio5" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio5">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">SMS</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio6" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio6">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <label class="etiqueta">WhatsApp</label>
-                <div class="radio-inputs">
-                    <label class="radio">
-                        <input type="radio" name="radio7" checked="">
-                        <span class="name">Si</span>
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="radio7">
-                        <span class="name">No</span>
-                    </label>
-                </div>
-                <div class="boton">
-                    <button type="submit">Cotizar</button>
-                </div>
-            </div>
-            </section>
+
+
+            <form>
+                <div class="box-lista3">
+                    <div>
+                        <h2 class="sub-texto">Add-Ons Flujo</h2>
+                    </div>
+                    <div>
+                        <label class="etiqueta">Modelo IA</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio1" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio1">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <label class="etiqueta">Prueba de Vida</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio2" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio2">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <label class="etiqueta">Extracción OCR</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio3" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio3">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <label class="etiqueta">RENAPO</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio4" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio4">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+
+                        <label class="etiqueta">INE</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio5" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio5">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <label class="etiqueta">SMS</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio6" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio6">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <label class="etiqueta">WhatsApp</label>
+                        <div class="radio-inputs">
+                            <label class="radio">
+                                <input type="radio" name="radio7" checked="">
+                                <span class="name">Si</span>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="radio7">
+                                <span class="name">No</span>
+                            </label>
+                        </div>
+                        <div class="boton">
+                            <button type="submit">Cotizar</button>
+                        </div>
+                    </div>
+            </form>
         </div>
-        
+
     </main>
-    
+
 
 
 
